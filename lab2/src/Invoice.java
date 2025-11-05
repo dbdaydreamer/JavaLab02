@@ -1,3 +1,5 @@
+package src;
+
 public class Invoice{
     private String detailNumber;
     private String detailDescription;
