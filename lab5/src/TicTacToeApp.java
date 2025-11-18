@@ -18,7 +18,6 @@ public class TicTacToeApp extends JFrame {
             for (int j = 0; j < 3; j++) {
                 board[i][j] = Cell.EMPTY;
                 JButton btn = new JButton("");
-                btn.setFont(new Font("Arial", Font.BOLD, 48));
                 buttons[i][j] = btn;
                 int row = i, col = j;
                 btn.addActionListener(e -> handleMove(row, col));
