@@ -80,3 +80,4 @@ class Main {
         System.out.printf("%s | Carbon footprint: %.2f\n", airplane.getInfo(), airplane.getCarbonFootprint());
     }
 }
+//
