@@ -1,12 +1,11 @@
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.*;
 
 public class TicTacToeApp extends JFrame {
     private enum Cell { X, O, EMPTY }
-    private Cell[][] board = new Cell[3][3];
+    private final Cell[][] board = new Cell[3][3];
     private boolean xTurn = true;
-    private JButton[][] buttons = new JButton[3][3];
+    private final JButton[][] buttons = new JButton[3][3];
 
     public TicTacToeApp() {
         setTitle("TicTacToe");
@@ -18,16 +17,15 @@ public class TicTacToeApp extends JFrame {
             for (int j = 0; j < 3; j++) {
                 board[i][j] = Cell.EMPTY;
                 JButton btn = new JButton("");
-                btn.setFont(new Font("Arial", Font.BOLD, 48));
                 buttons[i][j] = btn;
                 int row = i, col = j;
-                btn.addActionListener(e -> handleMove(row, col));
+                btn.addActionListener(e -> Move(row, col));
                 add(btn);
             }
         }
     }
 
-    private void handleMove(int row, int col) {
+    private void Move(int row, int col) {
         if (board[row][col] != Cell.EMPTY) return;
         board[row][col] = xTurn ? Cell.X : Cell.O;
         buttons[row][col].setText(xTurn ? "X" : "O");
@@ -79,9 +77,9 @@ public class TicTacToeApp extends JFrame {
             }
     }
 
-    public static void main(String[] args) {
+    static void main(String[] args) {
         SwingUtilities.invokeLater(() -> {
-            TicTacToeGUI game = new TicTacToeGUI();
+            TicTacToeApp game = new TicTacToeApp();
             game.setVisible(true);
         });
     }
