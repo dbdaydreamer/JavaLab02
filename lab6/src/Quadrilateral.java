@@ -125,41 +125,41 @@ class Square extends Rectangle {
     }
 }
 
-//class Main {
-//    public static void main() {
-//
-//        Quadrilateral quad = new Quadrilateral(
-//                new Point(0, 0), new Point(4, 1),
-//                new Point(5, 4), new Point(1, 3)
-//        );
-//        System.out.println(quad);
-//        System.out.println();
-//
-//        Trapezoid trapezoid = new Trapezoid(
-//                new Point(0, 0), new Point(13, 5),
-//                new Point(9, 7), new Point(7, 5)
-//        );
-//        System.out.println(trapezoid);
-//        System.out.println();
-//
-//        Parallelogram parallelogram = new Parallelogram(
-//                new Point(0, 0), new Point(6, 0),
-//                new Point(8, 4), new Point(2, 4)
-//        );
-//        System.out.println(parallelogram);
-//        System.out.println();
-//
-//        Rectangle rectangle = new Rectangle(
-//                new Point(0, 0), new Point(8, 0),
-//                new Point(8, 5), new Point(0, 5)
-//        );
-//        System.out.println(rectangle);
-//        System.out.println();
-//
-//        Square square = new Square(
-//                new Point(0, 0), new Point(5, 0),
-//                new Point(5, 5), new Point(0, 5)
-//        );
-//        System.out.println(square);
-//    }
+class Main {
+   public static void main() {
+
+       Quadrilateral quad = new Quadrilateral(
+               new Point(0, 0), new Point(4, 1),
+               new Point(5, 4), new Point(1, 3)
+       );
+       System.out.println(quad);
+       System.out.println();
+
+       Trapezoid trapezoid = new Trapezoid(
+               new Point(0, 0), new Point(13, 5),
+               new Point(9, 7), new Point(7, 5)
+       );
+       System.out.println(trapezoid);
+       System.out.println();
+
+       Parallelogram parallelogram = new Parallelogram(
+               new Point(0, 0), new Point(6, 0),
+               new Point(8, 4), new Point(2, 4)
+       );
+       System.out.println(parallelogram);
+       System.out.println();
+
+       Rectangle rectangle = new Rectangle(
+               new Point(0, 0), new Point(8, 0),
+               new Point(8, 5), new Point(0, 5)
+       );
+       System.out.println(rectangle);
+       System.out.println();
+
+       Square square = new Square(
+               new Point(0, 0), new Point(5, 0),
+               new Point(5, 5), new Point(0, 5)
+       );
+       System.out.println(square);
+   }
 //}
